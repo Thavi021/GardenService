@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GreenEdge Garden Services</title>
+
+<link rel="icon" type="image/png"
+      href="https://www.plant-science.co/wp-content/uploads/Plant-Science-Favicon.png">
+
+<style>
+/* -------------------------------------
+   GLOBAL DESIGN
+-------------------------------------- */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20231224/pngtree-dark-green-tropical-leaves-create-a-natural-texture-backdrop-image_13843064.png')
+        no-repeat center center fixed;
+    background-size: cover;
+    color: #2d3a2f;
+}
+
+/* Smooth fade-in animation */
+.fade-in {
+    animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* -------------------------------------
+   HEADER
+-------------------------------------- */
+header {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 28px 15px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+header h1 {
+    margin: 0;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+header p {
+    margin-top: 6px;
+    opacity: 0.85;
+    font-size: 1.05rem;
+}
+
+/* -------------------------------------
+   NAVIGATION
+-------------------------------------- */
+nav {
+    text-align: center;
+    background: rgba(255,255,255,0.85);
+    padding: 12px;
+}
+nav a {
+    color: #2f4f36;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* -------------------------------------
+   HERO
+-------------------------------------- */
+.hero {
+    height: 260px;
+    background: url('https://cdn.wallpapersafari.com/86/86/A1wWjd.jpg')
+        center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* -------------------------------------
+   SECTIONS
+-------------------------------------- */
+.container {
+    background: rgba(255,255,255,0.93);
+    margin: 22px 14px;
+    padding: 28px 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+}
+h2 {
+    color: #345c3c;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+}
+
+/* -------------------------------------
+   SERVICE CARDS
+-------------------------------------- */
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.service-box {
+    background: rgba(255,255,255,0.96);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.25s ease;
+}
+.service-box:hover {
+    transform: translateY(-5px);
+}
+.service-box h3 {
+    margin-top: 0;
+    color: #355b3d;
+}
+.service-img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* -------------------------------------
+   PRICING
+-------------------------------------- */
+.price {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #3c6e47;
+    margin-bottom: 6px;
+}
+
+/* -------------------------------------
+   WHATSAPP BUTTON
+-------------------------------------- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 62px;
+    height: 62px;
+    background: #25D366;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    line-height: 62px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    z-index: 999;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    60% { transform: scale(1.12); }
+    100% { transform: scale(1); }
+}
+
+/* -------------------------------------
+   FOOTER
+-------------------------------------- */
+footer {
+    text-align: center;
+    background: rgba(255,255,255,0.88);
+    padding: 18px;
+    font-size: 0.95rem;
+    margin-top: 40px;
+}
+
+/* -------------------------------------
+   TABLET + DESKTOP RESPONSIVENESS
+-------------------------------------- */
+@media (min-width: 600px) {
+    .hero { height: 320px; font-size: 2.4rem; }
+    .services { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .services { grid-template-columns: repeat(3, 1fr); }
+    .hero { height: 360px; font-size: 2.6rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="fade-in">
+    <h1>Glenanda Garden Services</h1>
+    <p>Professional • Reliable • Nature‑Driven Outdoor Care</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+</nav>
+
+<div class="hero fade-in">
+    Transforming Outdoor Spaces With Natural Perfection
+</div>
+
+<!-- SERVICES SECTION -->
+<div class="container fade-in" id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <!-- Lawn Maintenance -->
+        <div class="service-box">
+            <img class="service-img" src="https://i.roamcdn.net/hz/pi/base/387e26e620e4285b9ad549fd064ed32a/-/horizon-files-prod/pi/picture/q4m5prp/4dbb476884edce3432c87fa5d6a198cb87703254.jpg" alt="Lawn Maintenance">
+            <h3>Lawn Maintenance</h3>
+            <p>Precision mowing, edging, and lawn health management to keep your yard clean, vibrant, and professionally maintained throughout the year.</p>
+        </div>
+
+        <!-- FIXED TREE FELLING IMAGE + ENHANCED CONTENT -->
+        <div class="service-box">
+            <img class="service-img" src="https://www.treefelling-johannesburg.co.za/wp-content/uploads/2021/07/197.jpg" alt="Tree Felling & Arbor Care">
+            <h3>Tree Felling & Professional Arbor Care</h3>
+            <p>We carry out **safe, controlled tree felling** using certified arbor standards. This includes hazardous tree removal, storm‑damaged trees, structural risk reduction, sunlight improvement, and yard transformation projects.</p>
+            <p>All work includes debris removal, branch cutting, stump treatment, and full site cleanup—ensuring your property remains protected and beautifully restored.</p>
+        </div>
+
+        <!-- Hedge Sculpting -->
+        <div class="service-box">
+            <img class="service-img" src="https://i.pinimg.com/originals/1d/1d/07/1d1d0713e9d1aa80789d7aa6dc91a933.jpg">
+            <h3>Hedge & Shrub Sculpting</h3>
+            <p>Elegant shaping and maintenance of hedges, shrubs, and perimeter greenery to maintain a refined natural aesthetic across your property.</p>
+        </div>
+
+        <!-- Garden Clean-ups -->
+        <div class="service-box">
+            <img class="service-img" src="https://citygardeners.co.uk/wp-content/uploads/2023/07/one-off-garden-clearance-service-wood-green-n22.jpg" alt="Garden Clean-ups">
+            <h3>Garden Clean‑ups & Restoration</h3>
+            <p>From overgrowth to seasonal clearing, we restore neglected spaces, remove debris, eliminate weeds, and revive the natural beauty of your garden environment.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- PRICING -->
+<div class="container fade-in" id="pricing">
+    <h2>Pricing</h2>
+
+    <div class="services">
+
+         <!-- Hedge Sculpting -->
+        <div class="service-box">
+            <img class="service-img" src="https://livinggreenlandscapes.co.za/wp-content/uploads/2020/04/irrigation.jpg">
+            <h3>Custom Garden - R1000</h3>
+            <p>A tailor‑made garden designed to match your style, needs, and outdoor vision. From layout planning to plant selection and finishing touches, we create a unique, beautifully balanced space that reflects your personality and enhances your home’s natural beauty.</p>
+        </div>
+
+
+         <!-- Hedge Sculpting -->
+        <div class="service-box">
+            <img class="service-img" src="https://www.landscaping.com.sg/wp-content/uploads/2023/12/Low-Maintenance-Lawn-Options.jpg">
+            <h3>Small yard- Lawn - R350</h3>
+            <p>Our Grass Cutting service provides a neat, even, and well‑maintained lawn with precision trimming across the entire yard. We mow the grass to an optimal height, edge along pathways and borders for a crisp finish, and remove loose clippings to leave your outdoor space clean and refreshed. This service is ideal for keeping your yard tidy, healthy, and visually appealing with quick, reliable maintenance.</p>
+        </div>
+
+        <!-- Hedge Sculpting -->
+        <div class="service-box">
+            <img class="service-img" src="https://i0.wp.com/www.nvslandscapes.com/wp-content/uploads/2022/05/photo-of-someone-mowing-their-lawn.png">
+            <h3>Large yard- Lawn - R750</h3>
+            <p>Our Large Home Garden Service is designed for spacious properties that need comprehensive, detailed outdoor care. We manage expansive lawns, wide garden beds, and extended boundary areas with premium-grade equipment to ensure consistent, high‑quality results. This service includes full‑area grass cutting, edging along long pathways and perimeter lines, clearing large volumes of leaves and debris, trimming bushes or light overgrowth, and ensuring all open spaces look neat, balanced, and professionally maintained.
+Perfect for homeowners with big yards or estate‑style properties, this service delivers a clean, polished, and well‑kept outdoor environment with the attention and scale your home deserves.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/0723520626?text=Hi%20I%20would%20like%20a%20garden%20service%20quote"
+   class="whatsapp-float" target="_blank">💬</a>
+
+<footer>
+    © 2026 Glenanda Garden Services — Excellence Rooted in Nature.
+</footer>
+
+</body>
+</html>
